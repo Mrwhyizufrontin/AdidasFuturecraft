@@ -1,7 +1,7 @@
 # AdidasFuturecraft
 Adidas Futurecraft sign up script
 
-Thanks to @hunterbdm for base script 
+Thanks to @hunterbdm for base script
 
 Steps to Run
 1. Install Node JS
