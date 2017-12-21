@@ -66,7 +66,8 @@ function main() {
         dateOfBirth: dateOfBirth,
         email: email,
         market: 'US'
-      }
+      },
+       proxy: formatProxy(proxyList[Math.floor(Math.random() * proxyList.length)])
     }, (err, resp, body) => {
       if (err) {
         log('Error when entering: ' + err, 'error', 'Creator');
