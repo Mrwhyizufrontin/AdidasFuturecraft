@@ -3,7 +3,7 @@ const request = require('request').defaults({
 });
 const fs = require('fs');
 const names = require('./names');
-const log = require('./util/log');
+const log = require('./log');
 
 // How many entries you want
 const ENTRIES = 1;
