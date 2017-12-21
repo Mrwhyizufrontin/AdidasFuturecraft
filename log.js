@@ -1,4 +1,3 @@
-const emoji = require('node-emoji')
 const chalk = require('chalk');
 require("console-stamp")(console, {
   pattern: 'HH:MM:ss:l',
@@ -23,9 +22,6 @@ module.exports = function log(text, type, task) {
       break;
     case "success":
       console.log(chalk.blueBright(`[Task ${task}]`) + chalk.greenBright(` [SUCCESS] ${text}`));
-      break;
-    case "emoji":
-      console.log(chalk.blueBright(`[Task ${task}]`) + chalk.magentaBright(emoji.emojify(` [EMOJI :upside_down_face: ] ${text}`)));
       break;
     case "task_log":
       console.log(chalk.blueBright(`[Task ${task}]`) + (` [LOG] ${text}`));
